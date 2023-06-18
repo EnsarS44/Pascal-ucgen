@@ -42,23 +42,23 @@ int main() {
     char devam = 'Y';
     int t_degeri;
     while (devam == 'Y' || devam == 'y') {
-        printf("Lutfen bir T degeriniz:");
+        printf("Please enter a T value:");
         scanf("%d", &t_degeri);
         kontrol = satirHesapla(&t_degeri, dizi);
         if(kontrol==1){
-            printf("T degeri pascal ucgeni cizmek icin uygundur.\n Satir sayisi %d oalrak hesaplanmistir!\n", dizi[1]);
+            printf("c\n Number of lines calculated as %d!\n", dizi[1]);
             ucgenciz(dizi);
 
         }else {
-         printf("T degeri pascal ucgeni cizmek icin uygun degildir.\n");
+         printf("T value is not suitable for drawing pascal's triangle.\n");
 
         }
 
-        printf("Devam etmek istiyor musunuz? (Y/N): ");
+        printf("Do you want to continue? (Y/N): ");
         scanf(" %c", &devam);
         if(devam == 'n' || devam == 'N'){
 
-            printf("Cikis yapildi...");
+            printf("Checked out...");
             break;
             }
     }
